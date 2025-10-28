@@ -27,3 +27,16 @@ Para más detalles, consultar el [README de Infrastructure](./src/LegalManagemen
 **Capa de Presentación (API REST)** - Contiene los controladores y endpoints de la API REST para el sistema jurídico. Esta capa expone los servicios de dominio y aplicación a través de una interfaz HTTP, manejando la autenticación, validación de entrada, y sistema de notificaciones. Sirve como punto de entrada principal para las solicitudes del cliente y coordina la comunicación entre las capas internas y el mundo exterior, siguiendo los principios RESTful y utilizando tecnologías como ASP.NET Core, JWT, Swagger/OpenAPI, y SignalR.
 
 Para más detalles, consultar el [README de WebAPI](./src/LegalManagement.WebAPI/README.md).
+
+### src/LegalManagement.BlazorApp
+
+**Capa de Presentación (Interfaz de Usuario)** - Aplicación Blazor Server que construye la interfaz interactiva de usuario para clientes, abogados y administradores. Utiliza el patrón MVVM (Model-View-ViewModel) para separar la lógica de presentación de la UI, proporcionando una experiencia moderna y responsiva. Se comunica con la WebAPI mediante HttpClient para consumir los servicios REST del sistema.
+
+#### Características Principales:
+- **Blazor Server**: Desarrollo full-stack en C# con interactividad en tiempo real mediante SignalR
+- **Patrón MVVM**: Separación clara entre UI, lógica de presentación y datos
+- **Integración con API**: Consumo de endpoints REST de LegalManagement.WebAPI
+- **Roles de Usuario**: Interfaces personalizadas para clientes, abogados y administradores
+- **Experiencia Moderna**: UI responsiva con validación en tiempo real y actualizaciones automáticas
+
+Para más detalles sobre los beneficios de Blazor, arquitectura MVVM y relación con la API, consultar el [README de BlazorApp](./src/LegalManagement.BlazorApp/README.md).
