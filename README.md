@@ -21,3 +21,9 @@ Para más detalles, consultar el [README de Application](./src/LegalManagement.A
 **Capa de Infraestructura** - Implementa los detalles técnicos y el acceso a datos del sistema de gestión jurídica. Utiliza Entity Framework Core como ORM para interactuar con SQL Server, maneja integraciones con servicios externos, y proporciona implementaciones concretas de las interfaces definidas en las capas de dominio y aplicación, siguiendo los principios de Clean Architecture. Esta capa es responsable de la persistencia de datos, configuración de entidades, implementación de repositorios, y manejo de servicios de infraestructura como notificaciones y autenticación.
 
 Para más detalles, consultar el [README de Infrastructure](./src/LegalManagement.Infrastructure/README.md).
+
+### src/LegalManagement.WebAPI
+
+**Capa de Presentación (API REST)** - Contiene los controladores y endpoints de la API REST para el sistema jurídico. Esta capa expone los servicios de dominio y aplicación a través de una interfaz HTTP, manejando la autenticación, validación de entrada, y sistema de notificaciones. Sirve como punto de entrada principal para las solicitudes del cliente y coordina la comunicación entre las capas internas y el mundo exterior, siguiendo los principios RESTful y utilizando tecnologías como ASP.NET Core, JWT, Swagger/OpenAPI, y SignalR.
+
+Para más detalles, consultar el [README de WebAPI](./src/LegalManagement.WebAPI/README.md).
