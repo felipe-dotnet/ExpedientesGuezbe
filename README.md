@@ -18,6 +18,6 @@ Para más detalles, consultar el [README de Application](./src/LegalManagement.A
 
 ### src/LegalManagement.Infrastructure
 
-**Capa de Infraestructura** - Implementa los detalles técnicos y acceso a datos.
+**Capa de Infraestructura** - Implementa los detalles técnicos y el acceso a datos del sistema de gestión jurídica. Utiliza Entity Framework Core como ORM para interactuar con SQL Server, maneja integraciones con servicios externos, y proporciona implementaciones concretas de las interfaces definidas en las capas de dominio y aplicación, siguiendo los principios de Clean Architecture. Esta capa es responsable de la persistencia de datos, configuración de entidades, implementación de repositorios, y manejo de servicios de infraestructura como notificaciones y autenticación.
 
 Para más detalles, consultar el [README de Infrastructure](./src/LegalManagement.Infrastructure/README.md).
